@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+}
+/* nav */
+nav {
+    display: flex;
+    justify-content: right;
+    color: rgb(255, 0, 136);
+    background-color: rgb(249, 214, 219);
+    font-weight:lighter;
+    font-size: larger;
+}
+/* nav links */
+nav a {
+    text-decoration: none;
+    color: rgb(255, 0, 136);
+    padding: 10px 20px;
+}
+nav a:hover {
+    color:rgb(249, 214, 219);
+    font-weight: bolder;
+}
+/*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(249, 214, 219);
+    font-weight:lighter;
+    font-size: larger;
+ }
+ /*footer links*/
+ footer a{
+    text-decoration: none; 
+    color:rgb(255, 0, 136);
+    padding: 10px 15px;
+ }
+ footer a:hover {
+    color: rgb(249, 214, 219);
+    font-weight: bolder;
+ }
+ /*link box*/
+ .link-box {
+    text-decoration: none;
+    color:rgb(246, 117, 185);
+    
+ }
+ .link-box:hover {
+    border: 1px solid rgb(249, 214, 219);
+    background-color:rgb(255, 0, 136);
+    border-radius: 10px;
+ }
+ /*section 1-4*/
+ .section-one {
+    background-color:pink;
+    padding:20px;
+    color:rgb(255, 0, 136);
+    align-items: center;
+ }
+ .section-two {
+    background-color:rgb(250, 204, 212);
+    padding:20px;
+    color:rgb(255, 0, 136);
+
+ }
+ 
+ .section-two a{
+    text-decoration: none;
+ }
+
+.section-three {
+    background-color:pink;
+    padding: 10px;
+    color:rgb(255, 0, 136);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+.section-three h1{
+    font-size: xx-large;
+}
+.section-three p{
+    text-align: center;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.section-four {
+    background-color:pink;
+    padding:20px;
+    color:rgb(255, 0, 136);
+}
+/*fonts*/
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    color:rgb(156, 96, 110);
+    text-align: center;
+    display: inline;
+    textsiz
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:large;
+    color:rgb(199, 132, 132);
+    text-align: center;
+}
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+    color:rgb(255, 0, 136);
+}
+hr {
+    width: 100%;
+    color:rgb(199, 132, 132);
+    border: 2px dashed 
+}
+/*image settings for section 1*/
+.section-one {
+        background-color: pink;
+        padding: 20px;
+        color: rgb(255, 0, 136);
+        align-items: center;
+        justify-content: center;
+        text-align: center;    
+}
+.border{
+border: 1px solid rgba(156, 96, 110, 0.338)
+
+}
+section-one img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section-one img:nth-child(2){
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
+section-one img:nth-child(3){
+    position:absolute; 
+    top: 0;
+    right: 0;
+}
+section-one img:nth-child(4){
+    position:absolute;
+    top: 0;
+    right: 20px;
+}
+.section-two p{
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+/**style the grid**/
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Style each card */
+.card {
+    background-color: rgb(249, 214, 219);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card:last-child{
+    padding-right: 20px;
+}
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* Style card images */
+.uniform-image {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+}
+
+.card-image{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Style card content */
+
+.card-content h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.card-content dt{
+  font-weight: bold;
+}
+.card-content dl {
+    display: grid;
+    gap: 15px;
+    list-style: none;
+}
+.card-content dd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centered img {
+    margin: 0 30px;
+}
+
+.card-content dl.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.card-content dl.skills dt {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-content dl.skills dd {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-content ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 1.25rem;
+}
+/* CSS */
+form input[type="text"],
+form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(255, 0, 136);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(199, 132, 132);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.form-group label {
+    font-weight: bold;
+}
+.section-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
